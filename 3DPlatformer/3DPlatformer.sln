@@ -7,8 +7,6 @@ Project("{DDE422F8-4A4F-CDFE-19B6-BE46A4BF7147}") = "3DPlatformer", "Assembly-CS
 EndProject
 Project("{DDE422F8-4A4F-CDFE-19B6-BE46A4BF7147}") = "3DPlatformer", "Assembly-CSharp-Editor.csproj", "{03C8BD58-039D-B27D-F5F3-166D390CB9BD}"
 EndProject
-Project("{DDE422F8-4A4F-CDFE-19B6-BE46A4BF7147}") = "3DPlatformer", "Assembly-UnityScript.unityproj", "{DD27D3CE-2A9D-FF16-CA3A-83284204EAA3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{03C8BD58-039D-B27D-F5F3-166D390CB9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03C8BD58-039D-B27D-F5F3-166D390CB9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03C8BD58-039D-B27D-F5F3-166D390CB9BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD27D3CE-2A9D-FF16-CA3A-83284204EAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD27D3CE-2A9D-FF16-CA3A-83284204EAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD27D3CE-2A9D-FF16-CA3A-83284204EAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD27D3CE-2A9D-FF16-CA3A-83284204EAA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +48,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal
