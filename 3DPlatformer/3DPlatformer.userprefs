@@ -1,14 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Level1_Changes.cs">
     <Files>
-      <File FileName="Assets\Scripts\Level1_Changes.cs" Line="1" Column="1" />
-      <File FileName="Assets\Custom Meshes\RightTriangleMesh.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CoreObjScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" Line="64" Column="57" />
+      <File FileName="Assets\Scripts\Level1_Changes.cs" Line="39" Column="71" />
+      <File FileName="Assets\Scripts\EditMeshInEditor.cs" Line="1" Column="1" />
+      <File FileName="Assets\TriPlanarTerrain\Scripts\TriPlanarTerrainScript.js" Line="5" Column="1" />
+      <File FileName="Assets\Materials\WorldShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Materials\NewSurfaceShader.shader" Line="9" Column="33" />
+      <File FileName="Assets\Materials\triPlanarTerrain.shader" Line="204" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
