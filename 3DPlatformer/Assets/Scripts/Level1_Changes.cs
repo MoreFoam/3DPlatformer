@@ -6,7 +6,7 @@ public class Level1_Changes : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		makeThingsNice(false);
+		makeThingsNice(true);
 	}
 	
 	// Update is called once per frame
@@ -34,7 +34,9 @@ public class Level1_Changes : MonoBehaviour {
 
 			GameObject.Find ("Background Music").GetComponent<AudioSource>().pitch=1f;
 
-			GameObject.Find ("Sun").GetComponent<Light>().intensity=.5f;
+			GameObject.Find ("Sun").GetComponent<Light>().intensity=1.2f;
+
+			GameObject.Find ("Secondary Sun").GetComponent<Light>().intensity=.8f;
 
 			for (var i=3;i<=5;i++) {
 				GameObject.Find ("Broken Bridge Piece "+i).GetComponent<BoxCollider>().enabled=false;
@@ -42,6 +44,16 @@ public class Level1_Changes : MonoBehaviour {
 			}
 			GameObject.Find ("Fixed Bridge Piece").GetComponent<BoxCollider>().enabled=true;
 			GameObject.Find ("Fixed Bridge Piece").GetComponent<MeshRenderer>().enabled=true;
+
+			RenderSettings.fog = false;
+
+			Texture niceGrassTexture = (Texture)Resources.Load ("Nice Grass Texture", typeof(Texture));
+
+			GameObject.Find ("Terrain").GetComponent<Terrain> ().terrainData.splatPrototypes [1].texture = (Texture2D)niceGrassTexture;
+			GameObject.Find ("Terrain").GetComponent<Terrain> ().Flush ();
+
+			Debug.Log (GameObject.Find ("Terrain").GetComponent<Terrain> ().terrainData.splatPrototypes[1].texture);
+			Debug.Log ((Texture2D)niceGrassTexture);
 
 		} else {
 
@@ -61,7 +73,9 @@ public class Level1_Changes : MonoBehaviour {
 
 			GameObject.Find ("Background Music").GetComponent<AudioSource>().pitch=.5f;
 
-			GameObject.Find ("Sun").GetComponent<Light>().intensity=.15f;
+			GameObject.Find ("Sun").GetComponent<Light>().intensity=.8f;
+
+			GameObject.Find ("Secondary Sun").GetComponent<Light>().intensity=.6f;
 
 			for (var i=3;i<=5;i++) {
 				GameObject.Find ("Broken Bridge Piece "+i).GetComponent<BoxCollider>().enabled=true;
@@ -69,6 +83,8 @@ public class Level1_Changes : MonoBehaviour {
 			}
 			GameObject.Find ("Fixed Bridge Piece").GetComponent<BoxCollider>().enabled=false;
 			GameObject.Find ("Fixed Bridge Piece").GetComponent<MeshRenderer>().enabled=false;
+
+			RenderSettings.fog = true;
 
 		}
 	}

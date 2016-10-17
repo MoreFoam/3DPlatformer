@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{BD932B7D-582A-2013-7946-DDF228260D09}") = "Hub World", "Assembly-CSharp-firstpass.csproj", "{00C3D346-41CC-0032-3A92-1129572E356B}"
+EndProject
+Project("{BD932B7D-582A-2013-7946-DDF228260D09}") = "Hub World", "Assembly-CSharp-Editor.csproj", "{E4A2883A-FD22-D5D7-7AF3-6C4C2C10C1C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00C3D346-41CC-0032-3A92-1129572E356B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C3D346-41CC-0032-3A92-1129572E356B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C3D346-41CC-0032-3A92-1129572E356B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C3D346-41CC-0032-3A92-1129572E356B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A2883A-FD22-D5D7-7AF3-6C4C2C10C1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A2883A-FD22-D5D7-7AF3-6C4C2C10C1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A2883A-FD22-D5D7-7AF3-6C4C2C10C1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A2883A-FD22-D5D7-7AF3-6C4C2C10C1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
