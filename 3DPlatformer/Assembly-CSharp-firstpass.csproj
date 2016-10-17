@@ -63,6 +63,7 @@
      <None Include="Assets\Unity UI\Textures and Sprites\SF UI\Background\LICENSE.txt" />
      <None Include="Assets\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Materials\NewSurfaceShader.shader" />
      <None Include="Assets\Unity UI\Materials\UI-Default-No-Alpha.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />

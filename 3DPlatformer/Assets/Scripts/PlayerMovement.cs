@@ -3,15 +3,18 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float speed = 3.0F;
-	public float rotateSpeed = 3.0F;
-	public float jumpSpeed = 3.0f;
+	
 
 	private Camera cam1;
 
+    public float speed = 10.0F;
+    public float jumpSpeed = 10.0F;
+    public float gravity = 20.0F;
+    private Vector3 moveDirection = Vector3.zero;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		cam1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
 	
 	}
@@ -20,32 +23,28 @@ public class PlayerMovement : MonoBehaviour {
 
 
 	void Update() {
-		CharacterController controller = GetComponent<CharacterController>();
-
-		float speed2 = speed * Input.GetAxis("Horizontal");
-		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
-        float moveVertical = Input.GetAxisRaw ("Vertical");
-
-
-		//transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
-
 		
-		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-		Vector3 strafe = cam1.transform.TransformDirection(Vector3.right);
-		controller.SimpleMove(strafe * speed2);
+        CharacterController controller = GetComponent<CharacterController>();
+        if (controller.isGrounded)
+        {
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
+            moveDirection = transform.TransformDirection(moveDirection);
+
+            moveDirection *= speed;
+
+            if (Input.GetButton("Jump"))
+
+                moveDirection.y = jumpSpeed;
+
+        }
+
+        moveDirection.y -= gravity * Time.deltaTime;
+
+        controller.Move(moveDirection * Time.deltaTime);
 
 
-		Vector3 forward = cam1.transform.TransformDirection(Vector3.forward);
 
-		float curSpeed = speed * Input.GetAxis("Vertical");
-		controller.SimpleMove(forward * curSpeed);
-
-		if (Input.GetButtonDown("Jump")){
-			transform.position += transform.up * jumpSpeed * Time.deltaTime;
-		}
-
-		//transform.rotation = Quaternion.LookRotation(movement, Vector3.up);
-
-	}
+    }
 }
