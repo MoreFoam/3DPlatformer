@@ -36,7 +36,9 @@ public class Level1_Changes : MonoBehaviour {
 
 			GameObject.Find ("Sun").GetComponent<Light>().intensity=1.2f;
 
-			GameObject.Find ("Secondary Sun").GetComponent<Light>().intensity=.8f;
+			GameObject.Find ("Extra Light 1").GetComponent<Light>().intensity=.2f;
+			GameObject.Find ("Extra Light 2").GetComponent<Light>().intensity=.2f;
+			GameObject.Find ("Extra Light 3").GetComponent<Light>().intensity=.2f;
 
 			for (var i=3;i<=5;i++) {
 				GameObject.Find ("Broken Bridge Piece "+i).GetComponent<BoxCollider>().enabled=false;
@@ -75,7 +77,9 @@ public class Level1_Changes : MonoBehaviour {
 
 			GameObject.Find ("Sun").GetComponent<Light>().intensity=.8f;
 
-			GameObject.Find ("Secondary Sun").GetComponent<Light>().intensity=.6f;
+			GameObject.Find ("Extra Light 1").GetComponent<Light>().intensity=.1f;
+			GameObject.Find ("Extra Light 2").GetComponent<Light>().intensity=.1f;
+			GameObject.Find ("Extra Light 3").GetComponent<Light>().intensity=.1f;
 
 			for (var i=3;i<=5;i++) {
 				GameObject.Find ("Broken Bridge Piece "+i).GetComponent<BoxCollider>().enabled=true;
