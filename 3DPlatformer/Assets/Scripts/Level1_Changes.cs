@@ -18,7 +18,9 @@ public class Level1_Changes : MonoBehaviour {
 
 		if (makeNice) {
 
-			GameObject.Find ("TheRiver").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
+			GameObject.Find ("River 1").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
+			GameObject.Find ("River 2").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
+			GameObject.Find ("River 3").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
 			GameObject.Find ("Lake").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
 
 			Material sunnySkybox = (Material)Resources.Load ("SkyBrightMorning", typeof(Material));
@@ -36,7 +38,9 @@ public class Level1_Changes : MonoBehaviour {
 
 			GameObject.Find ("Sun").GetComponent<Light>().intensity=1.2f;
 
-			GameObject.Find ("Secondary Sun").GetComponent<Light>().intensity=.8f;
+			GameObject.Find ("Extra Light 1").GetComponent<Light>().intensity=.2f;
+			GameObject.Find ("Extra Light 2").GetComponent<Light>().intensity=.2f;
+			GameObject.Find ("Extra Light 3").GetComponent<Light>().intensity=.2f;
 
 			for (var i=3;i<=5;i++) {
 				GameObject.Find ("Broken Bridge Piece "+i).GetComponent<BoxCollider>().enabled=false;
@@ -57,7 +61,9 @@ public class Level1_Changes : MonoBehaviour {
 
 		} else {
 
-			GameObject.Find ("TheRiver").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
+			GameObject.Find ("River 1").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
+			GameObject.Find ("River 2").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
+			GameObject.Find ("River 3").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
 			GameObject.Find ("Lake").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
 			
 			Material cloudySky = (Material)Resources.Load ("SkyHaloSky", typeof(Material));
@@ -75,7 +81,9 @@ public class Level1_Changes : MonoBehaviour {
 
 			GameObject.Find ("Sun").GetComponent<Light>().intensity=.8f;
 
-			GameObject.Find ("Secondary Sun").GetComponent<Light>().intensity=.6f;
+			GameObject.Find ("Extra Light 1").GetComponent<Light>().intensity=.1f;
+			GameObject.Find ("Extra Light 2").GetComponent<Light>().intensity=.1f;
+			GameObject.Find ("Extra Light 3").GetComponent<Light>().intensity=.1f;
 
 			for (var i=3;i<=5;i++) {
 				GameObject.Find ("Broken Bridge Piece "+i).GetComponent<BoxCollider>().enabled=true;

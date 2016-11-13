@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 8e78b1034a0d8de4089c717881f3b7d4
+timeCreated: 1476927343
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Butt
+    100004: Front_legs
+    100006: Left_Eye
+    100008: LeftAntenna
+    100010: LeftMandible
+    100012: Mid_front
+    100014: Mid_front1
+    100016: Mid_rear
+    100018: Mid_rear1
+    100020: Mid_rear1_MeshPart0
+    100022: Mid_rear1_MeshPart1
+    100024: Middle_Legs
+    100026: pCylinder1
+    100028: pCylinder2
+    100030: pCylinder3
+    100032: pCylinder4
+    100034: pCylinder5
+    100036: pCylinder7
+    100038: Rear_Legs
+    100040: Right_Eye
+    100042: RightAntenna
+    100044: RightMandible
+    100046: transform1
+    100048: transform10
+    100050: transform11
+    100052: transform2
+    100054: transform3
+    100056: transform4
+    100058: transform5
+    100060: transform6
+    100062: transform7
+    100064: transform8
+    100066: transform9
+    400000: //RootNode
+    400002: Butt
+    400004: Front_legs
+    400006: Left_Eye
+    400008: LeftAntenna
+    400010: LeftMandible
+    400012: Mid_front
+    400014: Mid_front1
+    400016: Mid_rear
+    400018: Mid_rear1
+    400020: Mid_rear1_MeshPart0
+    400022: Mid_rear1_MeshPart1
+    400024: Middle_Legs
+    400026: pCylinder1
+    400028: pCylinder2
+    400030: pCylinder3
+    400032: pCylinder4
+    400034: pCylinder5
+    400036: pCylinder7
+    400038: Rear_Legs
+    400040: Right_Eye
+    400042: RightAntenna
+    400044: RightMandible
+    400046: transform1
+    400048: transform10
+    400050: transform11
+    400052: transform2
+    400054: transform3
+    400056: transform4
+    400058: transform5
+    400060: transform6
+    400062: transform7
+    400064: transform8
+    400066: transform9
+    2300000: //RootNode
+    2300002: Butt
+    2300004: Left_Eye
+    2300006: LeftAntenna
+    2300008: LeftMandible
+    2300010: Mid_front1
+    2300012: Mid_rear1_MeshPart0
+    2300014: Mid_rear1_MeshPart1
+    2300016: Right_Eye
+    2300018: RightAntenna
+    2300020: RightMandible
+    3300000: //RootNode
+    3300002: Butt
+    3300004: Left_Eye
+    3300006: LeftAntenna
+    3300008: LeftMandible
+    3300010: Mid_front1
+    3300012: Mid_rear1_MeshPart0
+    3300014: Mid_rear1_MeshPart1
+    3300016: Right_Eye
+    3300018: RightAntenna
+    3300020: RightMandible
+    4300000: Head
+    4300002: Butt
+    4300004: RightMandible
+    4300006: LeftMandible
+    4300008: Right_Eye
+    4300010: Left_Eye
+    4300012: LeftAntenna
+    4300014: RightAntenna
+    4300016: Mid_front1
+    4300018: Mid_rear1_MeshPart0
+    4300020: Mid_rear1_MeshPart1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

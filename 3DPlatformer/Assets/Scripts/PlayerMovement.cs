@@ -3,15 +3,19 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-	public float speed = 3.0F;
-	public float rotateSpeed = 3.0F;
-	public float jumpSpeed = 3.0f;
+	
 
 	private Camera cam1;
 
+    public float speed = 10.0F;
+    public float jumpSpeed = 10.0F;
+    public float gravity = 20.0F;
+	private Vector3 slideDirection = Vector3.zero;
+    private Vector3 moveDirection = Vector3.zero;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		cam1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
 	
 	}
@@ -20,32 +24,40 @@ public class PlayerMovement : MonoBehaviour {
 
 
 	void Update() {
-		CharacterController controller = GetComponent<CharacterController>();
-
-		float speed2 = speed * Input.GetAxis("Horizontal");
-		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
-        float moveVertical = Input.GetAxisRaw ("Vertical");
-
-
-		//transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
-
 		
-		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-		Vector3 strafe = cam1.transform.TransformDirection(Vector3.right);
-		controller.SimpleMove(strafe * speed2);
+        CharacterController controller = GetComponent<CharacterController>();
 
+		if (slideDirection == Vector3.zero) {
+			if (controller.isGrounded && controller.isGrounded) {
+				moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
 
-		Vector3 forward = cam1.transform.TransformDirection(Vector3.forward);
+				moveDirection = transform.TransformDirection (moveDirection);
 
-		float curSpeed = speed * Input.GetAxis("Vertical");
-		controller.SimpleMove(forward * curSpeed);
+				moveDirection *= speed;
 
-		if (Input.GetButtonDown("Jump")){
-			transform.position += transform.up * jumpSpeed * Time.deltaTime;
+				if (Input.GetButton ("Jump"))
+					moveDirection.y = jumpSpeed;
+
+			}
+
+			moveDirection.y -= gravity * Time.deltaTime;
+
+			controller.Move (moveDirection * Time.deltaTime);
+		} else {
+			moveDirection = gravity * Time.deltaTime * slideDirection;
+			moveDirection.y -= gravity * Time.deltaTime*10;
+
+			controller.Move (moveDirection * Time.deltaTime);
 		}
+    }
 
-		//transform.rotation = Quaternion.LookRotation(movement, Vector3.up);
-
+	void OnControllerColliderHit(ControllerColliderHit hit) {
+		Debug.Log (hit.normal.y);
+		if (hit.normal.y < .7 && hit.normal.y>.001) {
+			slideDirection = hit.normal;
+		}
+		else
+			slideDirection = Vector3.zero;
 	}
 }
