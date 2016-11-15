@@ -60,4 +60,15 @@ public class PlayerMovement : MonoBehaviour {
 		else
 			slideDirection = Vector3.zero;
 	}
+
+	void OnTriggerEnter (Collider other)
+	{
+		//Destroy (other.gameObject);
+
+		//De-activate other object
+		if (other.gameObject.CompareTag ("Pick Up"))
+		{
+			other.gameObject.SetActive (false);
+		}
+	}
 }

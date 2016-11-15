@@ -1,14 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Level1_Changes.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ProjectileCollision.cs">
     <Files>
-      <File FileName="Assets\Scripts\MouseLook.cs" Line="22" Column="42" />
-      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="57" Column="45" />
-      <File FileName="Assets\Materials\triPlanarTerrainAddPass.shader" Line="6" Column="41" />
+      <File FileName="Assets\Scripts\MouseLook.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="51" Column="53" />
+      <File FileName="Assets\Materials\triPlanarTerrainAddPass.shader" Line="1" Column="1" />
       <File FileName="Assets\Materials\triPlanarTerrain.shader" Line="1" Column="1" />
-      <File FileName="Assets\Materials\WorldShader.shader" Line="45" Column="28" />
-      <File FileName="Assets\Materials\UnlitWorldShader 1.shader" Line="20" Column="21" />
-      <File FileName="Assets\Scripts\Level1_Changes.cs" Line="23" Column="29" />
+      <File FileName="Assets\Materials\WorldShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Materials\UnlitWorldShader 1.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Level1_Changes.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Floatz.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ProjectileCollision.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
