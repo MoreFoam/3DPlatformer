@@ -1,41 +1,63 @@
-﻿using UnityEngine;
+using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class HealthSystem : MonoBehaviour {
 
 	private int health;
 	private int maxHealth;
-	private bool isHit = false;
+	private bool isHit;
+	public Image healthbar;
+	private bool isRunning;
 
 	// Use this for initialization
 	void Start () {
-		maxHealth = 3;
+		maxHealth = 5;
 		health = maxHealth;
+		isHit = false;
+		isRunning = false;
 	
 	}
-		
-	IEnumerator waitUpSon(){
-		print("Hey man chill out!");
-		yield return new WaitForSeconds(5);
+
+	void Update (){
+		transform.position = GameObject.FindWithTag("Player").transform.position;
+		float Chealth = (float)health / 5;
+		//Debug.Log("CRRENT HEALTH: "+ Chealth);
+		if (health <= maxHealth && health != 0){
+			healthbar.rectTransform.localScale = new Vector3(Chealth, healthbar.rectTransform.localScale.y, healthbar.rectTransform.localScale.z);
+		}
 	}
+		
+	void OnTriggerEnter(Collider Col){
 
-	void OnCollisionEnter(Collision Col){
-
-		if (Col.gameObject.tag == "Enemy"){
-			if (isHit){
-				Debug.Log("You were previously hit!");
-				StartCoroutine(waitUpSon());
-				isHit = false;
-			}
-			else if (health > 0){
-
-				if (health <= maxHealth){
-					health = health - 1;
-				}
-				Debug.Log("YOU WERE HIT! Current health: " + health.ToString());
-				isHit = true;
+		if (Col.CompareTag("Enemy")){
+			Debug.Log("isHit ValueAOnCollision: " + isHit);
+			Debug.Log("isRunning " + isRunning);
+			if (!isRunning){
+				StartCoroutine("waitUpSon");
 			}
 		}
+	}
 
+	IEnumerator waitUpSon(){
+		isRunning = true;
+			
+		
+		if (health > 0){
+
+			if (health <= maxHealth){
+				health = health - 1;
+				Debug.Log("YOU WERE HIT! Current health: " + health.ToString());
+				yield return new WaitForSeconds(3);
+				Debug.Log("TEST");
+				isRunning = false;
+				yield break;
+
+				//Debug.Log("isHit ValueB4: " + isHit);
+			}
+			Debug.Log("isHit ValueAftr: " + isHit);
+			
+			//yield break;
+		}
 	}
 }
