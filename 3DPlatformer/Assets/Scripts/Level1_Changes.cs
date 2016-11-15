@@ -18,7 +18,9 @@ public class Level1_Changes : MonoBehaviour {
 
 		if (makeNice) {
 
-			GameObject.Find ("TheRiver").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
+			GameObject.Find ("River 1").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
+			GameObject.Find ("River 2").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
+			GameObject.Find ("River 3").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
 			GameObject.Find ("Lake").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.937f, .937f, .937f, 1.00f));
 
 			Material sunnySkybox = (Material)Resources.Load ("SkyBrightMorning", typeof(Material));
@@ -59,7 +61,9 @@ public class Level1_Changes : MonoBehaviour {
 
 		} else {
 
-			GameObject.Find ("TheRiver").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
+			GameObject.Find ("River 1").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
+			GameObject.Find ("River 2").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
+			GameObject.Find ("River 3").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
 			GameObject.Find ("Lake").GetComponent<MeshRenderer> ().sharedMaterial.SetColor ("_RefrColor", new Color (.675f, .525f, .078f, 1.00f));
 			
 			Material cloudySky = (Material)Resources.Load ("SkyHaloSky", typeof(Material));

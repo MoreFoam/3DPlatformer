@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 10.0F;
     public float jumpSpeed = 10.0F;
     public float gravity = 20.0F;
+	private Vector3 slideDirection = Vector3.zero;
     private Vector3 moveDirection = Vector3.zero;
 
 
@@ -26,25 +27,37 @@ public class PlayerMovement : MonoBehaviour {
 		
 
         CharacterController controller = GetComponent<CharacterController>();
-        if (controller.isGrounded)
-        {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-            moveDirection = transform.TransformDirection(moveDirection);
+		if (slideDirection == Vector3.zero) {
+			if (controller.isGrounded && controller.isGrounded) {
+				moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0, Input.GetAxis ("Vertical"));
 
-            moveDirection *= speed;
+				moveDirection = transform.TransformDirection (moveDirection);
 
-            if (Input.GetButton("Jump"))
+				moveDirection *= speed;
 
-                moveDirection.y = jumpSpeed;
+				if (Input.GetButton ("Jump"))
+					moveDirection.y = jumpSpeed;
 
-        }
+			}
 
-        moveDirection.y -= gravity * Time.deltaTime;
+			moveDirection.y -= gravity * Time.deltaTime;
 
-        controller.Move(moveDirection * Time.deltaTime);
+			controller.Move (moveDirection * Time.deltaTime);
+		} else {
+			moveDirection = gravity * Time.deltaTime * slideDirection;
+			moveDirection.y -= gravity * Time.deltaTime*10;
 
-
-
+			controller.Move (moveDirection * Time.deltaTime);
+		}
     }
+
+	void OnControllerColliderHit(ControllerColliderHit hit) {
+		Debug.Log (hit.normal.y);
+		if (hit.normal.y < .7 && hit.normal.y>.001) {
+			slideDirection = hit.normal;
+		}
+		else
+			slideDirection = Vector3.zero;
+	}
 }
