@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour {
 
     Transform player_tr;
-    float rotateSpeed = 3.0f, moveSpeed = 3.0f, gravity = 20.0f;
+    public float rotateSpeed = 3.0f, moveSpeed = 3.0f, gravity = 20.0f;
     private Vector3 moveDirection = Vector3.zero;
 
 	// Use this for initialization

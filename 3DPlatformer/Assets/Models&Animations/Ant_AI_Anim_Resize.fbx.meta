@@ -1,0 +1,565 @@
+fileFormatVersion: 2
+guid: 8579f9d6681e730438de0955eaee8031
+timeCreated: 1479192243
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Butt
+    100004: Front_Left_Leg
+    100006: Front_Left_Leg_Joint
+    100008: Front_legs
+    100010: Front_Right_Leg
+    100012: Front_Right_Leg_Joint
+    100014: joint17
+    100016: joint18
+    100018: joint2
+    100020: joint20
+    100022: joint21
+    100024: joint23
+    100026: joint24
+    100028: joint3
+    100030: joint5
+    100032: joint6
+    100034: joint8
+    100036: joint9
+    100038: Left_Eye
+    100040: Left_Front_Leg_Group
+    100042: Left_Rear_Leg
+    100044: Left_Rear_Leg_Group
+    100046: Left_Rear_Leg_Group1
+    100048: LeftAntenna
+    100050: LeftMandible
+    100052: Mid_Front
+    100054: Mid_front
+    100056: Mid_front_Legs
+    100058: Mid_Left_Leg
+    100060: Mid_Left_Leg_Joint
+    100062: Mid_Mid_Legs
+    100064: Mid_Rear
+    100066: Mid_rear
+    100068: Mid_rear_legs
+    100070: Mid_Right_Leg
+    100072: Mid_Right_Leg_Joint
+    100074: Middle_Legs
+    100076: pCylinder1
+    100078: pCylinder2
+    100080: pCylinder3
+    100082: pCylinder4
+    100084: pCylinder5
+    100086: pCylinder7
+    100088: polySurface10
+    100090: polySurface12
+    100092: polySurface14
+    100094: polySurface16
+    100096: polySurface19
+    100098: polySurface2
+    100100: polySurface20
+    100102: polySurface3
+    100104: polySurface4
+    100106: polySurface5
+    100108: Rear_Left_Leg_Joint
+    100110: Rear_Legs
+    100112: Rear_Right_Leg_Joint
+    100114: Right_Eye
+    100116: Right_Front_Leg_Group
+    100118: Right_Mid_Leg_Group
+    100120: Right_Rear_Leg
+    100122: Right_Rear_Leg_Group
+    100124: Right_Rear_Leg_Group1
+    100126: RightAntenna
+    100128: RightMandible
+    100130: transform1
+    100132: transform10
+    100134: transform11
+    100136: transform13
+    100138: transform14
+    100140: transform15
+    100142: transform16
+    100144: transform18
+    100146: transform19
+    100148: transform2
+    100150: transform20
+    100152: transform21
+    100154: transform22
+    100156: transform23
+    100158: transform24
+    100160: transform25
+    100162: transform26
+    100164: transform27
+    100166: transform28
+    100168: transform3
+    100170: transform31
+    100172: transform32
+    100174: transform34
+    100176: transform35
+    100178: transform36
+    100180: transform37
+    100182: transform39
+    100184: transform4
+    100186: transform40
+    100188: transform41
+    100190: transform42
+    100192: transform43
+    100194: transform44
+    100196: transform45
+    100198: transform5
+    100200: transform6
+    100202: transform7
+    100204: transform8
+    100206: transform9
+    400000: //RootNode
+    400002: Butt
+    400004: Front_Left_Leg
+    400006: Front_Left_Leg_Joint
+    400008: Front_legs
+    400010: Front_Right_Leg
+    400012: Front_Right_Leg_Joint
+    400014: joint17
+    400016: joint18
+    400018: joint2
+    400020: joint20
+    400022: joint21
+    400024: joint23
+    400026: joint24
+    400028: joint3
+    400030: joint5
+    400032: joint6
+    400034: joint8
+    400036: joint9
+    400038: Left_Eye
+    400040: Left_Front_Leg_Group
+    400042: Left_Rear_Leg
+    400044: Left_Rear_Leg_Group
+    400046: Left_Rear_Leg_Group1
+    400048: LeftAntenna
+    400050: LeftMandible
+    400052: Mid_Front
+    400054: Mid_front
+    400056: Mid_front_Legs
+    400058: Mid_Left_Leg
+    400060: Mid_Left_Leg_Joint
+    400062: Mid_Mid_Legs
+    400064: Mid_Rear
+    400066: Mid_rear
+    400068: Mid_rear_legs
+    400070: Mid_Right_Leg
+    400072: Mid_Right_Leg_Joint
+    400074: Middle_Legs
+    400076: pCylinder1
+    400078: pCylinder2
+    400080: pCylinder3
+    400082: pCylinder4
+    400084: pCylinder5
+    400086: pCylinder7
+    400088: polySurface10
+    400090: polySurface12
+    400092: polySurface14
+    400094: polySurface16
+    400096: polySurface19
+    400098: polySurface2
+    400100: polySurface20
+    400102: polySurface3
+    400104: polySurface4
+    400106: polySurface5
+    400108: Rear_Left_Leg_Joint
+    400110: Rear_Legs
+    400112: Rear_Right_Leg_Joint
+    400114: Right_Eye
+    400116: Right_Front_Leg_Group
+    400118: Right_Mid_Leg_Group
+    400120: Right_Rear_Leg
+    400122: Right_Rear_Leg_Group
+    400124: Right_Rear_Leg_Group1
+    400126: RightAntenna
+    400128: RightMandible
+    400130: transform1
+    400132: transform10
+    400134: transform11
+    400136: transform13
+    400138: transform14
+    400140: transform15
+    400142: transform16
+    400144: transform18
+    400146: transform19
+    400148: transform2
+    400150: transform20
+    400152: transform21
+    400154: transform22
+    400156: transform23
+    400158: transform24
+    400160: transform25
+    400162: transform26
+    400164: transform27
+    400166: transform28
+    400168: transform3
+    400170: transform31
+    400172: transform32
+    400174: transform34
+    400176: transform35
+    400178: transform36
+    400180: transform37
+    400182: transform39
+    400184: transform4
+    400186: transform40
+    400188: transform41
+    400190: transform42
+    400192: transform43
+    400194: transform44
+    400196: transform45
+    400198: transform5
+    400200: transform6
+    400202: transform7
+    400204: transform8
+    400206: transform9
+    2300000: //RootNode
+    2300002: Butt
+    2300004: Front_Left_Leg
+    2300006: Front_Right_Leg
+    2300008: Left_Eye
+    2300010: Left_Rear_Leg
+    2300012: LeftAntenna
+    2300014: LeftMandible
+    2300016: Mid_Front
+    2300018: Mid_Left_Leg
+    2300020: Mid_Rear
+    2300022: Mid_Right_Leg
+    2300024: Right_Eye
+    2300026: Right_Rear_Leg
+    2300028: RightAntenna
+    2300030: RightMandible
+    3300000: //RootNode
+    3300002: Butt
+    3300004: Front_Left_Leg
+    3300006: Front_Right_Leg
+    3300008: Left_Eye
+    3300010: Left_Rear_Leg
+    3300012: LeftAntenna
+    3300014: LeftMandible
+    3300016: Mid_Front
+    3300018: Mid_Left_Leg
+    3300020: Mid_Rear
+    3300022: Mid_Right_Leg
+    3300024: Right_Eye
+    3300026: Right_Rear_Leg
+    3300028: RightAntenna
+    3300030: RightMandible
+    4300000: Head
+    4300002: Butt
+    4300004: RightMandible
+    4300006: LeftMandible
+    4300008: Right_Rear_Leg
+    4300010: Left_Rear_Leg
+    4300012: Mid_Left_Leg
+    4300014: Mid_Right_Leg
+    4300016: Front_Right_Leg
+    4300018: Front_Left_Leg
+    4300020: Mid_Rear
+    4300022: Mid_Front
+    4300024: RightAntenna
+    4300026: LeftAntenna
+    4300028: Left_Eye
+    4300030: Right_Eye
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Butt
+        weight: 1
+      - path: Left_Eye
+        weight: 1
+      - path: LeftAntenna
+        weight: 1
+      - path: LeftAntenna/pCylinder2
+        weight: 1
+      - path: LeftAntenna/pCylinder2/transform3
+        weight: 1
+      - path: LeftAntenna/pCylinder4
+        weight: 1
+      - path: LeftAntenna/pCylinder4/transform4
+        weight: 1
+      - path: LeftMandible
+        weight: 1
+      - path: Mid_front
+        weight: 1
+      - path: Mid_front/Front_legs
+        weight: 1
+      - path: Mid_front/Front_legs/transform7
+        weight: 1
+      - path: Mid_front/transform8
+        weight: 1
+      - path: Mid_Front
+        weight: 1
+      - path: Mid_front_Legs
+        weight: 1
+      - path: Mid_front_Legs/Left_Front_Leg_Group
+        weight: 1
+      - path: Mid_front_Legs/polySurface2
+        weight: 1
+      - path: Mid_front_Legs/polySurface2/transform13
+        weight: 1
+      - path: Mid_front_Legs/polySurface3
+        weight: 1
+      - path: Mid_front_Legs/polySurface3/transform14
+        weight: 1
+      - path: Mid_front_Legs/polySurface4
+        weight: 1
+      - path: Mid_front_Legs/polySurface4/transform16
+        weight: 1
+      - path: Mid_front_Legs/polySurface5
+        weight: 1
+      - path: Mid_front_Legs/polySurface5/transform15
+        weight: 1
+      - path: Mid_front_Legs/Right_Front_Leg_Group
+        weight: 1
+      - path: Mid_front_Legs/transform44
+        weight: 1
+      - path: Mid_front_Legs/transform44/Front_Right_Leg_Joint
+        weight: 1
+      - path: Mid_front_Legs/transform44/Front_Right_Leg_Joint/joint17
+        weight: 1
+      - path: Mid_front_Legs/transform44/Front_Right_Leg_Joint/joint17/joint18
+        weight: 1
+      - path: Mid_front_Legs/transform44/Front_Right_Leg_Joint/joint17/joint18/Front_Right_Leg
+        weight: 1
+      - path: Mid_front_Legs/transform44/Front_Right_Leg_Joint/joint17/joint18/Front_Right_Leg/transform37
+        weight: 1
+      - path: Mid_front_Legs/transform45
+        weight: 1
+      - path: Mid_front_Legs/transform45/Front_Left_Leg_Joint
+        weight: 1
+      - path: Mid_front_Legs/transform45/Front_Left_Leg_Joint/joint2
+        weight: 1
+      - path: Mid_front_Legs/transform45/Front_Left_Leg_Joint/joint2/joint3
+        weight: 1
+      - path: Mid_front_Legs/transform45/Front_Left_Leg_Joint/joint2/joint3/Front_Left_Leg
+        weight: 1
+      - path: Mid_front_Legs/transform45/Front_Left_Leg_Joint/joint2/joint3/Front_Left_Leg/transform36
+        weight: 1
+      - path: Mid_Mid_Legs
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface14
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface14/transform24
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface16
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface16/transform18
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface19
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface19/transform19
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface20
+        weight: 1
+      - path: Mid_Mid_Legs/polySurface20/transform25
+        weight: 1
+      - path: Mid_Mid_Legs/Right_Mid_Leg_Group
+        weight: 1
+      - path: Mid_Mid_Legs/transform42
+        weight: 1
+      - path: Mid_Mid_Legs/transform42/Mid_Left_Leg_Joint
+        weight: 1
+      - path: Mid_Mid_Legs/transform42/Mid_Left_Leg_Joint/joint5
+        weight: 1
+      - path: Mid_Mid_Legs/transform42/Mid_Left_Leg_Joint/joint5/joint6
+        weight: 1
+      - path: Mid_Mid_Legs/transform42/Mid_Left_Leg_Joint/joint5/joint6/Mid_Left_Leg
+        weight: 1
+      - path: Mid_Mid_Legs/transform42/Mid_Left_Leg_Joint/joint5/joint6/Mid_Left_Leg/transform34
+        weight: 1
+      - path: Mid_Mid_Legs/transform43
+        weight: 1
+      - path: Mid_Mid_Legs/transform43/Mid_Right_Leg_Joint
+        weight: 1
+      - path: Mid_Mid_Legs/transform43/Mid_Right_Leg_Joint/joint20
+        weight: 1
+      - path: Mid_Mid_Legs/transform43/Mid_Right_Leg_Joint/joint20/joint21
+        weight: 1
+      - path: Mid_Mid_Legs/transform43/Mid_Right_Leg_Joint/joint20/joint21/Mid_Right_Leg
+        weight: 1
+      - path: Mid_Mid_Legs/transform43/Mid_Right_Leg_Joint/joint20/joint21/Mid_Right_Leg/transform35
+        weight: 1
+      - path: Mid_rear
+        weight: 1
+      - path: Mid_rear/Middle_Legs
+        weight: 1
+      - path: Mid_rear/Middle_Legs/transform9
+        weight: 1
+      - path: Mid_rear/Rear_Legs
+        weight: 1
+      - path: Mid_rear/Rear_Legs/pCylinder5
+        weight: 1
+      - path: Mid_rear/Rear_Legs/pCylinder5/transform1
+        weight: 1
+      - path: Mid_rear/Rear_Legs/pCylinder7
+        weight: 1
+      - path: Mid_rear/Rear_Legs/pCylinder7/transform2
+        weight: 1
+      - path: Mid_rear/Rear_Legs/transform10
+        weight: 1
+      - path: Mid_rear/transform11
+        weight: 1
+      - path: Mid_Rear
+        weight: 1
+      - path: Mid_rear_legs
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1/Left_Rear_Leg_Group
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1/Left_Rear_Leg_Group/transform26
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1/polySurface10
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1/polySurface10/transform23
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1/transform22
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1/transform28
+        weight: 1
+      - path: Mid_rear_legs/Left_Rear_Leg_Group1/transform31
+        weight: 1
+      - path: Mid_rear_legs/Right_Rear_Leg_Group1
+        weight: 1
+      - path: Mid_rear_legs/Right_Rear_Leg_Group1/polySurface12
+        weight: 1
+      - path: Mid_rear_legs/Right_Rear_Leg_Group1/polySurface12/transform21
+        weight: 1
+      - path: Mid_rear_legs/Right_Rear_Leg_Group1/Right_Rear_Leg_Group
+        weight: 1
+      - path: Mid_rear_legs/Right_Rear_Leg_Group1/Right_Rear_Leg_Group/transform27
+        weight: 1
+      - path: Mid_rear_legs/Right_Rear_Leg_Group1/transform20
+        weight: 1
+      - path: Mid_rear_legs/transform40
+        weight: 1
+      - path: Mid_rear_legs/transform40/Rear_Right_Leg_Joint
+        weight: 1
+      - path: Mid_rear_legs/transform40/Rear_Right_Leg_Joint/joint23
+        weight: 1
+      - path: Mid_rear_legs/transform40/Rear_Right_Leg_Joint/joint23/joint24
+        weight: 1
+      - path: Mid_rear_legs/transform40/Rear_Right_Leg_Joint/joint23/joint24/Right_Rear_Leg
+        weight: 1
+      - path: Mid_rear_legs/transform40/Rear_Right_Leg_Joint/joint23/joint24/Right_Rear_Leg/transform32
+        weight: 1
+      - path: Mid_rear_legs/transform41
+        weight: 1
+      - path: Mid_rear_legs/transform41/Rear_Left_Leg_Joint
+        weight: 1
+      - path: Mid_rear_legs/transform41/Rear_Left_Leg_Joint/joint8
+        weight: 1
+      - path: Mid_rear_legs/transform41/Rear_Left_Leg_Joint/joint8/joint9
+        weight: 1
+      - path: Mid_rear_legs/transform41/Rear_Left_Leg_Joint/joint8/joint9/Left_Rear_Leg
+        weight: 1
+      - path: Mid_rear_legs/transform41/Rear_Left_Leg_Joint/joint8/joint9/Left_Rear_Leg/transform39
+        weight: 1
+      - path: Right_Eye
+        weight: 1
+      - path: RightAntenna
+        weight: 1
+      - path: RightAntenna/pCylinder1
+        weight: 1
+      - path: RightAntenna/pCylinder1/transform5
+        weight: 1
+      - path: RightAntenna/pCylinder3
+        weight: 1
+      - path: RightAntenna/pCylinder3/transform6
+        weight: 1
+      - path: RightMandible
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
