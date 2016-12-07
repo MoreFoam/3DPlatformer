@@ -109,7 +109,28 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DunGen\Code\Editor\GameObjectSelectionTypes.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\GraphObjectObserver.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\DoorwayInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\DungeonArchetypeInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\DungeonFlowInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\GlobalPropInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\GraphObjectInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\KeyManagerInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\LocalPropSetInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\RandomPrefabInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\RuntimeDungeonInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\TileInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Inspectors\TileSetInspector.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\MenuMethods.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Utility\EditorConstants.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Utility\EditorUtil.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Utility\TypeUtil.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Windows\DungeonAnalysisWindow.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Windows\DungeonFlowEditorWindow.cs" />
+    <Compile Include="Assets\DunGen\Code\Editor\Windows\DungeonGeneratorWindow.cs" />
     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Editor\Replace.cs" />
     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\Editor\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\GE Common Assets\GE Touch Joystick\CrossPlatformInput\Scripts\Editor\InputAxisScrollbarCI.cs" />
   </ItemGroup>
