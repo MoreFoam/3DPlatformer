@@ -6,7 +6,7 @@ public class Level1_Changes : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		makeThingsNice(true);
+		makeThingsNice(false);
 	}
 	
 	// Update is called once per frame

@@ -13,7 +13,8 @@ public class Floatz : MonoBehaviour {
 		tempVal = transform.position.y;
 	}
 	void Update ()
-	{        
+	{   
+		tempPos = transform.position;
 		tempPos.y = tempVal + amplitude * Mathf.Sin (speed * Time.time);
 		transform.position = tempPos;
 	}

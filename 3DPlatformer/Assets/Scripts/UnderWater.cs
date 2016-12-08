@@ -15,19 +15,18 @@ public class UnderWater : MonoBehaviour {
 
 	void OnTriggerEnter(Collider Col)
 	{
-		//Make sure the player object has its tag set to Player
 		if (Col.CompareTag("Camera1"))
 		{
+			Debug.Log ("Water Entered");
 			GameObject.Find ("Underwater Effect").GetComponent<MeshRenderer>().enabled=true;
 		}
 	}
 
 	void OnTriggerExit(Collider Col)
 	{
-		//Make sure the player object has its tag set to Player
-		Debug.Log(Col.tag);
 		if (Col.CompareTag("Camera1"))
 		{
+			Debug.Log ("Water Left");
 			GameObject.Find ("Underwater Effect").GetComponent<MeshRenderer>().enabled=false;
 		}
 	}
