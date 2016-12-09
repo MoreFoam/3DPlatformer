@@ -5,7 +5,7 @@ public class Projectile : MonoBehaviour
 {
     public Rigidbody projectile;
 	public Transform spawn;
-    public int destroyTime = 2;
+    public int destroyTime = 1;
 
     // Use this for initialization
     void Start()
@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-			Debug.Log ("Fireball cast");
+			
             Rigidbody clone;
             clone = (Rigidbody)Instantiate(projectile, spawn.position, projectile.rotation);
 

@@ -9,9 +9,10 @@ public class HealthSystem : MonoBehaviour {
 	private bool isHit;
 	public Image healthbar;
 	private bool isRunning;
+    public AudioClip ouch;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		maxHealth = 5;
 		health = maxHealth;
 		isHit = false;
@@ -31,7 +32,8 @@ public class HealthSystem : MonoBehaviour {
 	void OnTriggerEnter(Collider Col){
 
 		if (Col.CompareTag("Enemy")){
-			Debug.Log("isHit ValueAOnCollision: " + isHit);
+            GetComponent<AudioSource>().PlayOneShot(ouch);
+            Debug.Log("isHit ValueAOnCollision: " + isHit);
 			Debug.Log("isRunning " + isRunning);
 			if (!isRunning){
 				StartCoroutine("waitUpSon");
