@@ -3,19 +3,19 @@ using System.Collections;
 
 public class Player_Animation : MonoBehaviour {
 
-    private Animation anim;
+    private Animator anim;
     private int c = 0;
 
     void Awake() {
-        anim = GetComponent<Animation>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             anim.Play("Player_Walk");
         else
-            anim.Stop();
+            anim.Play("Idle");
     }
 }
