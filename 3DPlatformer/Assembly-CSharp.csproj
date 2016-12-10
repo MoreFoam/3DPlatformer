@@ -45,8 +45,109 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cubiquity\Scripts\ByteArray.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\ColoredCubesVolume.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\ColoredCubesVolumeCollider.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\ColoredCubesVolumeData.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\ColoredCubesVolumeRenderer.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\CubiquityException.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\CameraUtils.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\Clock.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\ColoredCubesVertex.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\CuOctreeNode.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\CubiquityDLL.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\DebugUtils.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\ExtensionMethods.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\Installation.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\Licensing.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\MeshConversion.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\OctreeNode.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\TerrainVertex.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Impl\Utility.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\MaterialSet.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Paths.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Picking.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\QuantizedColor.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Region.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\TerrainVolume.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\TerrainVolumeCollider.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\TerrainVolumeData.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\TerrainVolumeEditor.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\TerrainVolumeGenerator.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\TerrainVolumeRenderer.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Vector3i.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\Volume.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\VolumeCollider.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\VolumeData.cs" />
+     <Compile Include="Assets\Cubiquity\Scripts\VolumeRenderer.cs" />
      <Compile Include="Assets\Custom Meshes\RightTriangleMesh.cs" />
      <Compile Include="Assets\Custom Meshes\TriangleMesh.cs" />
+     <Compile Include="Assets\DunGen\Code\Adapters\NavMeshAdapter.cs" />
+     <Compile Include="Assets\DunGen\Code\Adapters\PortalCullingAdapter.cs" />
+     <Compile Include="Assets\DunGen\Code\Analysis\GenerationAnalysis.cs" />
+     <Compile Include="Assets\DunGen\Code\Analysis\NumberSetData.cs" />
+     <Compile Include="Assets\DunGen\Code\Analysis\RuntimeAnalyzer.cs" />
+     <Compile Include="Assets\DunGen\Code\Constants.cs" />
+     <Compile Include="Assets\DunGen\Code\Door.cs" />
+     <Compile Include="Assets\DunGen\Code\Doorway.cs" />
+     <Compile Include="Assets\DunGen\Code\DoorwayConnection.cs" />
+     <Compile Include="Assets\DunGen\Code\DoorwaySocket.cs" />
+     <Compile Include="Assets\DunGen\Code\DungenCharacter.cs" />
+     <Compile Include="Assets\DunGen\Code\Dungeon.cs" />
+     <Compile Include="Assets\DunGen\Code\DungeonArchetype.cs" />
+     <Compile Include="Assets\DunGen\Code\DungeonFlowGraph\DungeonFlow.cs" />
+     <Compile Include="Assets\DunGen\Code\DungeonFlowGraph\DungeonFlowBuilder.cs" />
+     <Compile Include="Assets\DunGen\Code\DungeonFlowGraph\GraphLine.cs" />
+     <Compile Include="Assets\DunGen\Code\DungeonFlowGraph\GraphNode.cs" />
+     <Compile Include="Assets\DunGen\Code\DungeonFlowGraph\References.cs" />
+     <Compile Include="Assets\DunGen\Code\DungeonGenerator.cs" />
+     <Compile Include="Assets\DunGen\Code\EditorConstants.cs" />
+     <Compile Include="Assets\DunGen\Code\GameObjectChanceTable.cs" />
+     <Compile Include="Assets\DunGen\Code\GenerationStats.cs" />
+     <Compile Include="Assets\DunGen\Code\GenerationStatus.cs" />
+     <Compile Include="Assets\DunGen\Code\GlobalProp.cs" />
+     <Compile Include="Assets\DunGen\Code\Graph\DungeonGraph.cs" />
+     <Compile Include="Assets\DunGen\Code\Graph\DungeonGraphConnection.cs" />
+     <Compile Include="Assets\DunGen\Code\Graph\DungeonGraphNode.cs" />
+     <Compile Include="Assets\DunGen\Code\Graph\DungeonGraphObject.cs" />
+     <Compile Include="Assets\DunGen\Code\IKeyLock.cs" />
+     <Compile Include="Assets\DunGen\Code\IKeySpawnable.cs" />
+     <Compile Include="Assets\DunGen\Code\InjectedTile.cs" />
+     <Compile Include="Assets\DunGen\Code\Key.cs" />
+     <Compile Include="Assets\DunGen\Code\KeyLockPlacement.cs" />
+     <Compile Include="Assets\DunGen\Code\KeyManager.cs" />
+     <Compile Include="Assets\DunGen\Code\LocalPropSet.cs" />
+     <Compile Include="Assets\DunGen\Code\LockedDoorwayAssociation.cs" />
+     <Compile Include="Assets\DunGen\Code\NodeLockPlacement.cs" />
+     <Compile Include="Assets\DunGen\Code\PreProcessTileData.cs" />
+     <Compile Include="Assets\DunGen\Code\RandomPrefab.cs" />
+     <Compile Include="Assets\DunGen\Code\RandomProp.cs" />
+     <Compile Include="Assets\DunGen\Code\RuntimeDungeon.cs" />
+     <Compile Include="Assets\DunGen\Code\Tile.cs" />
+     <Compile Include="Assets\DunGen\Code\TileInjectionRule.cs" />
+     <Compile Include="Assets\DunGen\Code\TilePlacementData.cs" />
+     <Compile Include="Assets\DunGen\Code\TilePlacementResult.cs" />
+     <Compile Include="Assets\DunGen\Code\TileSet.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\ChanceTable.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\DungeonArchetypeValidator.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\DungeonUtil.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\NumberUtil.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\Range.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\SerializableType.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\StringUtil.cs" />
+     <Compile Include="Assets\DunGen\Code\Utility\UnityUtil.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\AutoDoor.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\DemoTileInjector.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\Generator.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\KeyColour.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\KeyPickup.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\KeySpawnPoint.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\LockedDoor.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\PickupMotion.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\PlayerInventory.cs" />
+     <Compile Include="Assets\DunGen\Demo\Scripts\ScreenText.cs" />
      <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCamera.cs" />
      <Compile Include="Assets\GE Common Assets\GE Orbit Camera\Scripts\GE_OrbitCameraUI.cs" />
      <Compile Include="Assets\GE Common Assets\GE Toggle Full Screen\Scripts\GE_ToggleFullScreenUI.cs" />
@@ -89,6 +190,9 @@
      <Compile Include="Assets\Models&amp;Animations\PressurePlate\PressurePlateTigger.cs" />
      <Compile Include="Assets\Models&amp;Animations\Treasure_box\Tresure_box\chest.cs" />
      <Compile Include="Assets\Models&amp;Animations\Treasure_box\Tresure_box\chestLogic.cs" />
+     <Compile Include="Assets\Scripts\BPcollision.cs" />
+     <Compile Include="Assets\Scripts\BossHealth.cs" />
+     <Compile Include="Assets\Scripts\BossProjectile.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CoreObjScript.cs" />
      <Compile Include="Assets\Scripts\EditMeshInEditor.cs" />
@@ -104,6 +208,7 @@
      <Compile Include="Assets\Scripts\Orbit.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Player_Animation.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\ProjectileCollision.cs" />
      <Compile Include="Assets\Scripts\QuitOnClick.cs" />
@@ -124,19 +229,32 @@
      <Compile Include="Assets\Unity UI\Scripts\ShowSliderValue.cs" />
      <Compile Include="Assets\Unity UI\Scripts\TiltWindow.cs" />
      <None Include="Assets\Day-Night Skyboxes\readme.txt" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\ColoredCubesUtilities.cginc" />
+     <None Include="Assets\StreamingAssets\Cubiquity\VoxelDatabases\CreatedForAssets\Readme.txt" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\Planet.shader" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\VisualizeNormals.shader" />
      <None Include="Assets\Materials\triPlanarTerrain.shader" />
      <None Include="Assets\Unity UI\Fonts\Jupiter\LICENSE.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Materials\WorldShader.shader" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\ColorUtilities.cginc" />
      <None Include="Assets\Materials\triPlanarTerrainAddPass.shader" />
      <None Include="Assets\Unity UI\Textures and Sprites\SF UI\Background\LICENSE.txt" />
      <None Include="Assets\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\MaterialSetDebug.shader" />
      <None Include="Assets\Materials\UnlitWorldShader 1.shader" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\TerrainVolumeUtilities.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\StreamingAssets\Cubiquity\VoxelDatabases\Examples\ImportedCityLicense.txt" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\ColoredCubes.shader" />
      <None Include="Assets\Unity UI\Materials\UI-Default-No-Alpha.shader" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\Colormap.shader" />
+     <None Include="Assets\StreamingAssets\Cubiquity\VoxelDatabases\Examples\Tests\Readme.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\Triplanar.shader" />
      <None Include="Assets\GUI Animator\GUI Animator FREE\Readme.txt" />
+     <None Include="Assets\Cubiquity\Resources\Shaders\VisualizeLOD.shader" />
      <None Include="Assets\GE Common Assets\Readme.txt" />
      <None Include="Assets\GUI Animator\GUI Animator FREE\!How to.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
@@ -148,10 +266,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="GETween">
- <HintPath>C:/Users/Eric/Documents/Unity Projects/3DPlatformer/Assets/GUI Animator/Common/Plugins/GETween.dll</HintPath>
+ <HintPath>C:/Users/Chris/Desktop/Git_3DPlatformer/3DPlatformer/3DPlatformer/Assets/GUI Animator/Common/Plugins/GETween.dll</HintPath>
  </Reference>
  <Reference Include="GUIAnimatorFREE">
- <HintPath>C:/Users/Eric/Documents/Unity Projects/3DPlatformer/Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
+ <HintPath>C:/Users/Chris/Desktop/Git_3DPlatformer/3DPlatformer/3DPlatformer/Assets/GUI Animator/GUI Animator FREE/Plugins/GUIAnimatorFREE.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
